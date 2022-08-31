@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pedidos</title>
+</head>
+
+<body>
+  <div class="container">
+ 
+  <header class="encabezado">
+
+    <div class="imglogo">
+      <a href="./index.html"> <img src="./fotos/Logo.JPG" alt="logo" ></a>
+    </div>
+    <div class="titulo">
+        <h1>Pedidos</h1>
+    </div>
+    </header>
+    <main>
+    <div id="inicio"></div>
+
+    <ul>
+      <li><a class="navlink" href="./quienessomos.html">Quienes somos</a></li>
+      <li><a class="navlink" href="./productos.html">Productos</a></li>
+      <li><a class="navlink" href="./pedidos.html">Pedidos</a></li>
+      <li><a class="navlink" href="./Galería de fotos.html">Galería de fotos</a></li>
+      </ul>
+
+    
+   
+
+    <form class="formulario" action="" method="get" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Detalle del pedido</legend>
+          
+          <div>
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="nombre" name="Nombre" >
+        </div>
+
+        <div>
+            <label for="Apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" >
+        </div>
+
+        <div>
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion" >
+        </div>
+
+
+
+
+              <div>Tamaño</div>
+  
+             Grande
+              <label for="Grande"></label>
+              <input type="radio" name="tamaño" value="grande">
+              
+  
+              Chico
+              <label for="chico"></label>
+              <input type="radio" name="tamaño" value="chico">
+                     
+                     
+          <div>
+            
+             <label for="Tipo">Tipo</label>
+                  <select name="tipo" id="tipo">
+                  <option value="T">Triángulo</option>
+                  <option value="C">Cuadrado</option>
+                  <option value="P">Pentagono</option>
+                  </select>
+              
+          </div>
+               
+          
+          <div>
+        
+          <p>Si querés agregar algo mas</p>
+            <p>a tu pedido hacelo acá</p>
+           <textarea name="Detalles" id="" cols="30" rows="10"></textarea>
+           
+         </div>
+                
+       
+
+          <div>
+              <input type="submit" value="Enviar">
+          </div>
+               
+          </form>
+        </fieldset>
+
+      </main> 
+        <footer class="piedepagina">
+          <h4>"Si la vida fuese un terrario, nosotros te la hacemos mas feliz"</h4>
+          <div class="piedepaginaizq">
+      <p>Artesanos desde el año 2010</p>
+  
+          </div>
+      </footer>  
+      
+    </div>
+  
+</body>
+
+
+
+</html>

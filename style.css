@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   /* border: red solid 1px;   */
+}
+
+/*---HEADER----*/
+
+ .encabezado{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+      
+} 
+.titulo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color:rgb(180, 178, 178);
+    height:207px;
+
+}
+
+.titulo h1{
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+}
+
+
+/*-----IMAGEN LOGO----*/
+
+.imglogo{
+    width: 270px;
+    
+}
+.imglogo img{
+    width: 100%;
+}
+
+/*----BOTONES DEL COSTADO-----*/
+
+.navlink{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    width: 300px;
+    padding: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    
+}
+
+/*----ANIMACIONES BOTONES-----*/
+
+
+
+ul{
+    width: max-content;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    height: auto;
+    text-align: center;
+
+}
+
+li{
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+   
+}
+
+
+li:hover{
+    background-color: gray;
+    transform: translatey(3px);
+    transition: all 0.4s ease;
+}
+
+
+
+main{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+
+    background-image: linear-gradient(to right, rgb(142, 142, 255), rgb(184, 184, 184));
+}
+
+
+
+.productos{
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgsproductos{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+
+}
+
+.imgsproductos img{
+    width: 100%;
+    
+    padding: 8px;
+}
+
+.producto{
+  
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(233 138 138);
+    border: solid black 2px;
+    margin: 15px;
+    box-shadow: 10px 10px 50px 10px rgba(245, 246, 248, 0.65);
+    -webkit-box-shadow: 10px 10px 50px 10px rgba(232, 234, 241, 0.65);
+      
+   }
+
+   .producto:hover{
+    transform: translatey(5px);
+    transform: translatex(5px);
+    transition: all 0.4s ease;
+   }
+
+.producto h4{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.producto p{
+    width: 300px;
+    padding: 5px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+   
+}
+.piedepagina{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    font-size: 20px;
+}
+.piedepaginaizq{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.formulario{
+    font-family: 'Courier New', Courier, monospace; ;
+
+}
+
+
+@media screen and (min-width:650px) {
+    
+    main{
+        display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+        background-color: lightblue;
+    }
+    ul{
+       
+        text-align:left;
+    
+    }
+
+    .titulo h1{
+       
+        font-size: 70px;}
+
+        .encabezado{
+            display: flex;
+           flex-direction: row;
+           
+              
+        }    
+        
+         
+
+    
+}
+
+
+@media screen and (max-width:500px) {
+    
+   
+
+    .titulo h1{
+       text-align: center;
+        font-size: 70px;}
+
+
+
+    
+}
