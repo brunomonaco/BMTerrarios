@@ -43,6 +43,27 @@
     height: 600px;
 }
 
+/*----PRODUCTOS-----*/
+#terrario{
+    border: solid 2px black;
+}
+
+
+
+#terrario h2{
+    color: blue;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+#terraio p{
+
+    color: white;
+    font-size: 24px;
+    margin-bottom: 25px;
+
+}
+
+
 
 /*----ANIMACIONES BOTONES-----*/
 
@@ -97,8 +118,8 @@ main{
 }
 
 .imgsproductos{
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     border: solid black 3px;
@@ -146,8 +167,8 @@ main{
     font-weight: bold;
 }
 .producto p{
-    width: 300px;
-   
+    width: 100%;
+   margin:5px
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 15px;
