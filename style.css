@@ -20,6 +20,7 @@
 #items{
     color: white;
     border: 10px;
+    font-size: 18px;
 }
 .nav-item{
     margin: 5px;
@@ -42,7 +43,14 @@
 #imagenterrarios{
     height: 600px;
 }
-
+.carousel-item{
+    height: 500px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 /*----PRODUCTOS-----*/
 #terrario{
     border: solid 2px black;
@@ -62,6 +70,25 @@
     margin-bottom: 25px;
 
 }
+/*----ideas-----*/
+.idea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+    height: 400px;
+
+}
+.ideas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+}
+
+
 
 
 
@@ -118,8 +145,8 @@ main{
 }
 
 .imgsproductos{
-    width: 100%;
-    height: 100%;
+    width: 270px;
+    height: 300px;
     display: flex;
     align-items: center;
     border: solid black 3px;
@@ -137,16 +164,16 @@ main{
 }
 
 .producto{
-  
+  width: 300px;
     padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:rgb(233 138 138);
+    background-color:#73A2BF;
     border: solid black 3px;
     margin: 15px;
-    box-shadow: 10px 10px 50px 10px rgba(245, 246, 248, 0.65);
+    box-shadow: 10px 10px 50px 10px rgba(245, 246, 248, 0.774);
     -webkit-box-shadow: 10px 10px 50px 10px rgba(232, 234, 241, 0.65);
       
    }
@@ -188,12 +215,54 @@ main{
     
 }
 
+.historia{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .formulario{
     font-family: 'Courier New', Courier, monospace; ;
 
 }
 
+.contactoIndex {
+    background-image:url(https://cdn.domestika.org/c_fill,dpr_auto,f_auto,pg_1,t_base_params/v1631734525/course-covers/000/001/833/1833-original.jpg?1631734525);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.contactoIndex__button{
+
+    width: 50%;
+    border: 2px solid #fafafa;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    text-decoration: none;
+    
+    color: #fafafa;
+    transition: all 0.4s ease;
+}
+
+.contactoIndex__box{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 400px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+
+}
 
 
 @media screen and (min-width:650px) {
