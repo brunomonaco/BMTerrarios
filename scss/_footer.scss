@@ -1,0 +1,13 @@
+.piedepagina{
+    text-align: center;
+    background-color: $color-principal;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    font-size: map-get($font-sz, size3);
+}
+.piedepaginaizq{
+    display: flex;
+    justify-content: center;
+    
+}

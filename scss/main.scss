@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import'variables';
+@import 'header';
+@import'footer';
 
+@mixin flexbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 
 *{
     margin: 0px;
@@ -10,34 +19,8 @@
 }
 
 /*---HEADER----*/
-#navegador{
-    background-color: black;
-}
-.titulo{
-    color: white;
-    padding-left: 10px;
-}
-#items{
-    color: white;
-    border: 10px;
-    font-size: 18px;
-}
-.nav-item{
-    margin: 5px;
-    border-radius: 10px;
-}
-.imagen{
-    width: 100px;
-    height: 100px;
-}
-.logo{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-#hamburguesa{
-    background-color: white;
-}
+
+
 /*----CARRUSEL-----*/
 
 #imagenterrarios{
@@ -53,28 +36,30 @@ img{
 }
 /*----PRODUCTOS-----*/
 #terrario{
-    border: solid 2px black;
+    border: solid 2px $color-principal;
 }
 
 
 
-#terrario h2{
-    color: blue;
-    font-size: 40px;
+#terrario {
+    
+    h2{
+    color: $color-principal;
+    font-size:map-get($font-sz, size6);
     margin-bottom: 25px;
-}
-#terraio p{
+        }
+ p{
 
     color: white;
-    font-size: 24px;
+    font-size: map-get($font-sz, size4);
     margin-bottom: 25px;
 
+}
 }
 /*----ideas-----*/
 .idea{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox;
+  
     text-align: center;
     margin: 10px;
     width: 200px;
@@ -112,25 +97,23 @@ ul{
 li{
     padding: 10px;
     margin: 10px;
-    background-color: black;
+    background-color:$color-principal;
     transition: all 0.4s ease;
-
+    &:hover{
+        background-color: gray;
+        transform: translatey(3px);
+        transition: all 0.4s ease;
+    }
    
 }
 
 
-li:hover{
-    background-color: gray;
-    transform: translatey(3px);
-    transition: all 0.4s ease;
-}
+
 
 
 
 main{
-    display: flex;
-   flex-direction: column;
-   align-items: center;
+   @include flexbox;
 
     background-image: linear-gradient(to right, rgb(142, 142, 255), rgb(184, 184, 184));
 }
@@ -149,7 +132,8 @@ main{
     height: 300px;
     display: flex;
     align-items: center;
-    border: solid black 3px;
+    border: solid $color-principal 2px;
+    
 
    
 
@@ -171,7 +155,8 @@ main{
     align-items: center;
     justify-content: center;
     background-color:#73A2BF;
-    border: solid black 3px;
+    border: solid $color-principal 2px;
+    border-radius: 8px;
     margin: 15px;
     box-shadow: 10px 10px 50px 10px rgba(245, 246, 248, 0.774);
     -webkit-box-shadow: 10px 10px 50px 10px rgba(232, 234, 241, 0.65);
@@ -190,30 +175,18 @@ main{
     margin-top: 10px;
     margin-bottom: 10px;
     width: 300px;
-    font-size: 20px;
+    font-size: map-get($font-sz, size3);
     font-weight: bold;
 }
 .producto p{
     width: 100%;
-   margin:5px
+   margin:5px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 15px;
+    font-size: map-get($font-sz, size1);
    
 }
-.piedepagina{
-    text-align: center;
-    background-color: black;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 10px;
-    font-size: 20px;
-}
-.piedepaginaizq{
-    display: flex;
-    justify-content: center;
-    
-}
+
 
 .historia{
     text-align: center;
@@ -242,7 +215,7 @@ main{
     border: 2px solid #fafafa;
     border-radius: 2px;
     padding: 10px;
-    font-size: 20px;
+    font-size: map-get($font-sz, size3);
     background-color: transparent;
     text-decoration: none;
     
@@ -259,7 +232,7 @@ main{
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: map-get($font-sz, size5);
 
 
 }
@@ -281,7 +254,7 @@ main{
 
     .titulo h1{
        
-        font-size: 70px;}
+        font-size: map-get($font-sz, size7);}
 
         .encabezado{
             display: flex;
@@ -304,7 +277,7 @@ main{
 
     .titulo h1{
        text-align: center;
-        font-size: 70px;}
+        font-size: map-get($font-sz, size7);}
 
 
 

@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+#navegador {
+  background-color: black;
+}
+#navegador .titulo {
+  color: white;
+  padding-left: 10px;
+}
+#navegador #items {
+  color: white;
+  border: 10px;
+  font-size: 15px;
+}
+#navegador .nav-item {
+  margin: 5px;
+  border-radius: 10px;
+}
+#navegador .imagen {
+  width: 100px;
+  height: 100px;
+}
+#navegador .logo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#navegador #hamburguesa {
+  background-color: white;
+}
+
+.piedepagina {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.piedepaginaizq {
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* border: red solid 1px;   */
+}
+
+/*---HEADER----*/
+/*----CARRUSEL-----*/
+#imagenterrarios {
+  height: 600px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*----PRODUCTOS-----*/
+#terrario {
+  border: solid 2px black;
+}
+
+#terrario h2 {
+  color: black;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+#terrario p {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+/*----ideas-----*/
+.idea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  width: 200px;
+  height: 400px;
+}
+
+.ideas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px;
+}
+
+/*----ANIMACIONES BOTONES-----*/
+ul {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  height: auto;
+  text-align: center;
+}
+
+li {
+  padding: 10px;
+  margin: 10px;
+  background-color: black;
+  transition: all 0.4s ease;
+}
+li:hover {
+  background-color: gray;
+  transform: translatey(3px);
+  transition: all 0.4s ease;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(142, 142, 255), rgb(184, 184, 184));
+}
+
+.productos {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imgsproductos {
+  width: 270px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  border: solid black 2px;
+}
+
+.imgsproductos img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.producto {
+  width: 300px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #73A2BF;
+  border: solid black 2px;
+  border-radius: 8px;
+  margin: 15px;
+  box-shadow: 10px 10px 50px 10px rgba(245, 246, 248, 0.774);
+  -webkit-box-shadow: 10px 10px 50px 10px rgba(232, 234, 241, 0.65);
+}
+
+.producto:hover {
+  transform: translatey(5px);
+  transform: translatex(5px);
+  transition: all 0.4s ease;
+}
+
+.producto h4 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.producto p {
+  width: 100%;
+  margin: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.historia {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formulario {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.contactoIndex {
+  background-image: url(https://cdn.domestika.org/c_fill,dpr_auto,f_auto,pg_1,t_base_params/v1631734525/course-covers/000/001/833/1833-original.jpg?1631734525);
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactoIndex__button {
+  width: 50%;
+  border: 2px solid #fafafa;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  text-decoration: none;
+  color: #fafafa;
+  transition: all 0.4s ease;
+}
+
+.contactoIndex__box {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 400px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 650px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: lightblue;
+  }
+  ul {
+    text-align: left;
+  }
+  .titulo h1 {
+    font-size: 70px;
+  }
+  .encabezado {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 500px) {
+  .titulo h1 {
+    text-align: center;
+    font-size: 70px;
+  }
+}/*# sourceMappingURL=main.css.map */

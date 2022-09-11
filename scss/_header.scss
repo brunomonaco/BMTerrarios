@@ -1,0 +1,29 @@
+#navegador{
+    background-color:$color-principal;
+
+    .titulo{
+        color: $color-secundario;
+        padding-left: 10px;
+    }
+    #items{
+        color: white;
+        border: 10px;
+        font-size:map-get($font-sz, size1);
+    }
+    .nav-item{
+        margin: 5px;
+        border-radius: 10px;
+    }
+    .imagen{
+        width: 100px;
+        height: 100px;
+    }
+    .logo{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #hamburguesa{
+        background-color: white;
+    }
+}
