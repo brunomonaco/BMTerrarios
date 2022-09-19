@@ -8,33 +8,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-   /* border: red solid 1px;   */
+   
 }
-
-/*---HEADER----*/
-
 
 /*----CARRUSEL-----*/
 
 #imagenterrarios{
     height: 600px;
 }
+
 .carousel-item{
     height: 600px;
 }
+
 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
+
 /*----PRODUCTOS-----*/
+
 #terrario{
     border: solid 2px $color-principal;
 }
@@ -56,16 +56,18 @@ img{
 
 }
 }
+
+
 /*----ideas-----*/
 .idea{
     @include flexbox;
-  
-    text-align: center;
+     text-align: center;
     margin: 10px;
     width: 200px;
     height: 400px;
 
 }
+
 .ideas{
     display: flex;
     flex-direction: row;
@@ -73,13 +75,7 @@ img{
     margin: 50px;
 }
 
-
-
-
-
 /*----ANIMACIONES BOTONES-----*/
-
-
 
 ul{
     width: max-content;
@@ -114,8 +110,7 @@ li{
 
 main{
    @include flexbox;
-
-    background-image: linear-gradient(to right, CCE5EB, FFFFFF);
+    background-image: linear-gradient(to right, #42c5e6, #FFFFFF);
 }
 
 
@@ -133,10 +128,7 @@ main{
     display: flex;
     align-items: center;
     border: solid $color-principal 2px;
-    
-
-   
-
+      
 }
 
 .imgsproductos img{
@@ -144,7 +136,6 @@ main{
     height: 100%;
     object-fit: cover;
     
-  
 }
 
 .producto{
@@ -217,8 +208,7 @@ main{
     padding: 10px;
     font-size: map-get($font-sz, size3);
     background-color: transparent;
-    text-decoration: none;
-    
+    text-decoration: none;    
     color: #fafafa;
     transition: all 0.4s ease;
 }
@@ -240,10 +230,81 @@ main{
 .mainpedido{
 
     justify-content: center;
-   
     font-size: 20px;
     }
     
+
+.boton {
+    border-radius: 5px;
+    border: 2px $color-principal solid ;
+    margin: 8px;
+    padding: 8px;
+}
+
+.botoncomprar{
+    @extend.boton;
+    background-color: gray;
+
+}
+
+.botonagregar{
+    @extend.boton;
+    background-color: lightblue;
+}
+
+.historia{
+    margin: 100px;
+    margin-bottom: 200px;
+    .titulohistoria{
+        margin: 50px;
+        margin-bottom: 50px;
+    }
+
+}
+
+#biografia{
+    font-size: 20px;
+    color: #113a53;
+}
+
+.galeriadefotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeriacontainer{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+ 
+}
+
+.galeriatexto{
+    width: 50%;
+    padding: 30px;
+    
+
+}
+
+.galeriaimg{
+    width: 50%;
+
+}
+
+.galeriacontainerreverse{
+    display: flex;
+    flex-direction:column;
+ 
+}
+
+.centrador{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
 
 
 @media screen and (min-width:650px) {
@@ -273,8 +334,19 @@ main{
               
         }    
         
-         
+    .galeriacontainer{
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+    }     
 
+    .galeriacontainerreverse{
+        display: flex;
+        flex-direction:row-reverse;
+        height: 500px;
+     
+    }
+    
     
 }
 

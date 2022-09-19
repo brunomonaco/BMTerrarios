@@ -6,9 +6,9 @@
         padding-left: 10px;
     }
     #items{
-        color: white;
+        color: $color-secundario;
         border: 10px;
-        font-size:map-get($font-sz, size1);
+        font-size:map-get($font-sz, size3);
     }
     .nav-item{
         margin: 5px;
@@ -24,6 +24,6 @@
         object-fit: cover;
     }
     #hamburguesa{
-        background-color: white;
+        background-color: $color-secundario;
     }
 }

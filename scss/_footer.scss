@@ -1,7 +1,7 @@
 .piedepagina{
     text-align: center;
     background-color: $color-principal;
-    color: white;
+    color: $color-secundario;
     font-family: 'Courier New', Courier, monospace;
     padding: 10px;
     font-size: map-get($font-sz, size3);
