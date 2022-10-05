@@ -50,6 +50,11 @@
   box-sizing: border-box;
 }
 
+/*----HAMBURGUESA-----*/
+#hamburguesa {
+  margin: 5px;
+}
+
 /*----CARRUSEL-----*/
 #imagenterrarios {
   height: 600px;
@@ -95,7 +100,7 @@ img {
 
 .ideas {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin: 50px;
 }
@@ -261,11 +266,11 @@ main {
 }
 
 .historia {
-  margin: 100px;
+  margin: 10%;
   margin-bottom: 200px;
 }
 .historia .titulohistoria {
-  margin: 50px;
+  margin: auto;
   margin-bottom: 50px;
 }
 
@@ -308,6 +313,14 @@ main {
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .galeriacontainer {
+    height: auto;
+  }
+  .galeriatexto, .galeriaimg {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 650px) {
   main {
     display: flex;
@@ -335,6 +348,11 @@ main {
     display: flex;
     flex-direction: row-reverse;
     height: 500px;
+  }
+  .ideas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 500px) {
